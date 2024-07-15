@@ -6,9 +6,9 @@
 
 **主要分为两类：**
 
-**EgretVulDB：** 包含各类漏洞POC和EXP。
+**EgretVulDB：** 是漏洞复现文章集合，包含各类漏洞POC和EXP。
 
-**CTF-Wp：** 包含各类CTF题型的Write-Up。
+**CTF-Wp：** 是各中类型的CTF题的Write-Up集合。
 
 漏洞文章会定期更新
 
