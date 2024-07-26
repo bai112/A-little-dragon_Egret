@@ -1,6 +1,6 @@
 # FastAdmin后台开发框架 lang 任意文件读取漏洞
 
-> **Create by：** A-little-dragon
+> **Created by：** A-little-dragon
 >
 > **Team：** TracelessSec
 >
