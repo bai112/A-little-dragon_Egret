@@ -14,7 +14,7 @@
 
 1. F12在检查元素中可以看到隐藏的PHP代码
 
-![image-20240815165919876](C:\Users\WU262\AppData\Roaming\Typora\typora-user-images\image-20240815165919876.png)
+![image-20240815165919876](image\image-20240815165919876.png)
 
 ```php
 <?php 
@@ -93,8 +93,7 @@ POST请求 ==> a=???
 	POST请求 ==> a=flaag
 ```
 
-![image-20240815172658688](C:\Users\WU262\AppData\Roaming\Typora\typora-user-images\image-20240815172658688.png)
-
-<img src="C:\Users\WU262\AppData\Roaming\Typora\typora-user-images\image-20240815172839978.png" alt="image-20240815172839978" style="zoom:90%;" />
+![image-20240815172658688](image\image-20240815172658688.png)
+![image-20240815172839978](image\image-20240815172839978.png)
 
 最终**flag：** `DASCTF{27b62da69e01bf1ad3e4e737c2b8f4a1}`
